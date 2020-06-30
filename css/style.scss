@@ -9,7 +9,6 @@ $secborder: #ebebeb;
 $iconColor: #d9d9d9;
 
 body {
-
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -28,6 +27,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   //height: 100vh !important;
+  max-height: 720px;
   padding-bottom: 2rem;
   position: relative;
   overflow: hidden;
@@ -55,12 +55,6 @@ body {
   left: 100px;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .navbar img {
-    left: 50px;
-  }
-}
-
 .home .nav-item .border {
   border: 1px soolid $basicColor;
   position: relative;
@@ -76,18 +70,10 @@ body {
 
 .home .mainlogo img {
   width: 220px;
- // margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   position: relative;
   left: 77px;
   bottom: 1.7rem;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .mainlogo img {
-    width: 85px;
-    left: -55px;
-    position: relative;
-  }
 }
 
 .home .mainlogo {
@@ -96,18 +82,11 @@ body {
 }
 
 .home .contain {
-    left: 35rem;
-    color: #ffffff;
-    position: relative;
-    /* left: 80rem; */
-    bottom: 27.5rem;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .contain {
-    position: absolute;
-    left: 35%;
-  }
+  left: 35rem;
+  color: #ffffff;
+  position: relative;
+  /* left: 80rem; */
+  bottom: 27.5rem;
 }
 
 .home .contain h2 {
@@ -117,36 +96,15 @@ body {
   text-transform: uppercase;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .contain h2 {
-    font-size: 1rem;
-  }
-}
-
 .home .contain p {
   color: $basicColor;
   font-size: 0.9rem;
   margin-bottom: 2rem;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .contain p {
-    font-size: 0.5rem;
-  }
-}
-
 .home .contain .btns button {
   border: none;
   cursor: pointer;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .contain .btns button {
-    padding: 10px 10px;
-  //  margin-right: 0px !important;
-   // margin-bottom: 25px;
-    font-size: 10px;
-  }
 }
 
 .home .contain .btns i {
@@ -157,8 +115,8 @@ body {
   background-color: $backgroundbtn;
   color: $basicColor;
   border-radius: 3px;
-   //margin-right: 1rem;
-  padding: 10px 10px;
+  //margin-right: 1rem;
+  padding: 10px 14px;
   border: 0.5px solid $backgroundbtn;
 }
 
@@ -168,7 +126,7 @@ body {
   border-radius: 3px;
   margin-right: 1rem;
   border: 0.5px solid $basicColor;
-  padding: 10px 20px;
+  padding: 10px 14px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -178,45 +136,43 @@ body {
   color: $basicColor;
 }
 
-
 .home .owl-dots {
-    margin: auto;
-    text-align: center;
-    display: block !important;
-    position: relative;
-    bottom: 21rem;
-    left: 16px;
-  }
+  margin: auto;
+  text-align: center;
+  display: block !important;
+  position: relative;
+  bottom: 21rem;
+  left: 16px;
+}
 
-  .home .owl-dot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    border: 1px solid $iconColor !important;
-    margin: 10px 33px;
-    padding: 1px;
-    position: relative;
-  }
+.home .owl-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 3px solid #999 !important;
+  margin: 10px 33px;
+  padding: 5px;
+  position: relative;
+  background: #999 !important;
+  top: 0.3px;
+}
 
-  .home .owl-dot span::after{
-
-    content: "";
-    width: 60px;
-    height: 1px;
-    position: absolute;
-    top: 3px;
-    left: 10px;
-    background-color: #d9d9d9;
-
-
-  }
-  .home  .owl-dot.active {
-    background: #fff !important;
-    border: 2px solid #ffffff;
-   // padding: 5px;
-   // width: 12px;
-   // height: 12px;
-  }
+.home .owl-dot span::after {
+  content: "";
+  width: 65.5px;
+  height: 1px;
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  background-color: #d9d9d9;
+}
+.home .owl-dot.active {
+  background: #fff !important;
+  border: 3px solid #ffffff;
+  // padding: 5px;
+  // width: 12px;
+  // height: 12px;
+}
 
 /* End Home Section******************************************************************/
 
@@ -312,15 +268,6 @@ body {
 .blogs .contant .btns button {
   border: none;
   cursor: pointer;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .blogs .contant .btns button {
-    padding: 10px 15px;
-    margin-right: 0px !important;
-    margin-bottom: 12px;
-    font-size: 10px;
-  }
 }
 
 .blogs .contant .btns i {
@@ -441,14 +388,6 @@ body {
   left: 75%;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .feature .boor1,
-  .boor2,
-  .boor3 {
-    display: none;
-  }
-}
-
 /* End Feature Section *****************************************************************/
 
 /* Start clents Section */
@@ -483,49 +422,48 @@ body {
   padding: 0rem 5rem;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .clents .clent {
-    padding: 0px !important;
-  }
+.clents .owl-dots {
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  display: block !important;
 }
 
-.clents .owl-dots {
-    margin: auto;
-    margin-top: 40px;
-    text-align: center;
-    display: block !important;
-  }
+.clents .owl-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid $iconColor !important;
+  margin: 10px 33px;
+  padding: 1px;
+  position: relative;
+}
 
-  .clents .owl-dot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    border: 1px solid $iconColor !important;
-    margin: 10px 33px;
-    padding: 1px;
-    position: relative;
-  }
+.clents .owl-dot span::after {
+  content: "";
+  width: 63px;
+  height: 1px;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  background-color: #d9d9d9;
+}
 
-  .clents .owl-dot span::after{
+.owl-dot:last-of-type span::after {
+  display: none;
+}
 
-    content: "";
-    width: 60px;
-    height: 1px;
-    position: absolute;
-    top: 3px;
-    left: 10px;
-    background-color: #d9d9d9;
+.owl-dot:focus {
+  outline: 0 !important;
+}
 
-
-  }
-  .clents  .owl-dot.active {
-    background: #fff !important;
-    border: 2px solid #ffffff;
-   // padding: 5px;
-   // width: 12px;
-   // height: 12px;
-  }
-
+.clents .owl-dot.active {
+  background: #fff !important;
+  border: 2px solid #ffffff;
+  // padding: 5px;
+  // width: 12px;
+  // height: 12px;
+}
 
 .clents .head h3 {
   position: absolute;
@@ -555,25 +493,13 @@ body {
 }
 
 .clents .owl-item.active.center img {
-
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 .clents .owl-item.active.center .overlay {
-
-    width: 120px;
-    height: 120px;
-}
-
-
-
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .clents .clent img {
-    position: relative;
-    left: 45px;
-  }
+  width: 120px;
+  height: 120px;
 }
 
 .clents .clent .owl-stage-outer {
@@ -581,21 +507,16 @@ body {
   left: 110px !important;
 }
 
-.clents .owl-item.active.center .overlay 
-
-{
-    display: none;
+.clents .owl-item.active.center .overlay {
+  display: none;
 }
 
 .clents .owl-item.active.center .head h3 {
-
-    display: block !important;
-
-
+  display: block !important;
 }
 
 .owl-item .head h3 {
-    display: none;
+  display: none;
 }
 
 .clents .clent .overlay {
@@ -608,27 +529,14 @@ body {
   border-radius: 50%;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .clents .clent .overlay {
-    left: 45px;
-  }
-}
-
 .clents .smlltil {
   padding: 1rem 10rem;
   position: relative;
-  bottom: 15px;
+  bottom: 50px;
   color: $iconColor;
   font-family: $fontfamily;
   font-weight: 500;
   padding-bottom: 2rem;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .clents .smlltil {
-    padding: 0px !important;
-    font-size: 12px;
-  }
 }
 
 /* End Clents Section *******************************************/
@@ -678,14 +586,6 @@ body {
   top: 30%;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .teams .ourteam p {
-    padding: 0rem 1rem !important;
-    top: 17%;
-    font-size: 10px;
-  }
-}
-
 .bigteam {
   position: relative;
   bottom: 310px;
@@ -693,23 +593,8 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .bigteam .team {
-    margin-bottom: 30px !important;
-  }
-}
-
 .bigteam .team img {
   width: 320px;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .bigteam .team img {
-    width: 140px;
-    text-align: center;
-    position: relative;
-
-  }
 }
 
 /* End Teams Section ********************************************************/
@@ -789,13 +674,6 @@ body {
   background-color: $borderColor;
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
-  .support .puts .btn button {
-    position: relative;
-    left: 12% !important;
-  }
-}
-
 .support .puts .btn button:hover {
   background-color: $iconColor;
   color: $headersColor;
@@ -815,14 +693,6 @@ body {
   left: 35px;
   color: $borderColor;
 }
-
-@media (min-width: 320px) and (max-width: 500px) {
-    .support .bigicons .icon i {
-
-    left: 20px;
-    }
-  }
-
 .support .contt {
   padding: 10px;
   text-align: center;
@@ -833,7 +703,7 @@ body {
   margin-bottom: 10px;
 }
 
-.support .contt h4{
+.support .contt h4 {
   color: $headersColor;
   text-transform: uppercase;
   font-size: 14px;
@@ -841,169 +711,294 @@ body {
   font-family: $fontrelway;
 }
 
-
 .support .contt p {
-
-    color: #cccccc;
-    font-size: 12px;
+  color: #cccccc;
+  font-size: 12px;
 }
-
 
 /* end support *********************************************************************/
 
 .fotter {
-
-    background-color: #403d46;
-    width: 100%;
-    
+  background-color: #403d46;
+  width: 100%;
 }
 
-
 .fotter .icons {
-    overflow: hidden;
-    padding: 45px 25px 10px;
+  overflow: hidden;
+  padding: 45px 25px 10px;
+}
+
+.fotter .icons ul {
+  list-style: none;
+}
+
+.fotter .icons li {
+  padding: 10px 14px;
+  display: inline-block;
+  border: 1px solid #8080801f;
+  color: $secborder;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.fotter .icons .fb:hover {
+  background-color: #5d82d1;
+  color: #fff;
+}
+
+.fotter .icons .ins:hover {
+  background-color: #c435b1;
+  color: #fff;
+}
+
+.fotter .icons .twit:hover {
+  background-color: #40bff5;
+  color: #fff;
+}
+
+.fotter .icons .mail:hover {
+  background-color: #eb5e4c;
+  color: #fff;
+}
+
+.fotter .head h3 {
+  color: $basicColor;
+  letter-spacing: 4px;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  font-family: $fontrelway;
+  text-transform: uppercase;
+}
+
+.fotter .head p {
+  color: $iconColor;
+  font-family: $fontrelway;
+  font-weight: 400;
+  margin-bottom: 5em;
+}
+.minfotter {
+  background-color: #2d2933;
+}
+
+.minfotter .fot {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  color: $iconColor;
+}
+
+.minfotter .fot p {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.minfotter .fot span {
+  color: $borderColor;
+}
+
+.login ul {
+  list-style: none;
+}
+
+.login li {
+  display: inline-block;
+  padding: 20px;
+  font-weight: 600;
+  font-family: $fontfamily;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.login li:hover {
+  color: $borderColor;
+}
+
+/* media **********************************************************************************************************************/
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .navbar img {
+    left: 50px;
   }
-  
-  .fotter .icons ul {
-    list-style: none;
-  }
-  
-  .fotter .icons li {
-    padding: 10px 14px;
-    display: inline-block;
-    border: 1px solid #8080801f;
-    color: $secborder;
-    border-radius: 50%;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .mainlogo img {
+    width: 85px;
+    left: -55px;
     position: relative;
-    margin-left: 12px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
   }
-  
-  .fotter .icons .fb:hover {
-    background-color: #5d82d1;
-    color: #fff;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain {
+    position: absolute;
+    left: 205px;
+    bottom: 20px;
   }
-  
-  .fotter .icons .ins:hover {
-    background-color: #c435b1;
-    color: #fff;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain h2 {
+    font-size: 0.5rem;
   }
-  
-  .fotter .icons .twit:hover {
-    background-color: #40bff5;
-    color: #fff;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain p {
+    font-size: 0.5rem;
   }
-  
-  .fotter .icons .mail:hover {
-    background-color: #eb5e4c;
-    color: #fff;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain .btns .btn1 {
+    width: 100px;
+    margin-bottom: 9px;
   }
-  
-  .fotter .head h3{
+}
 
-    color: $basicColor;
-    letter-spacing: 4px;
-    font-size: 34px;
-    font-weight: 700;
-    margin-bottom: 50px;
-    font-family: $fontrelway;
-    text-transform: uppercase;
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain .btns .btn2 {
+    width: 100px;
+    margin-bottom: 9px;
+    left: 6px;
+    position: relative;
   }
+}
 
-  .fotter .head p {
-
-    color: $iconColor;
-    font-family: $fontrelway;
-    font-weight: 400;
-    margin-bottom: 5em;
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .owl-dots {
+    position: relative;
+    bottom: 25px;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 500px) {
-    .fotter .head h3{
-       
-        font-size: 14px;
-        letter-spacing: 2px;
-    }
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain .btns button {
+    // padding: 5px 5px;
+    font-size: 8px;
+    display: inline;
+    //width: 100px;
+    // margin-bottom: 9px;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 500px) {
-    .fotter .head p{
-       
-        font-size: 10px;
-    }
+/* *****************************************************************/
+@media (min-width: 300px) and (max-width: 900px) {
+  .feature .boor1,
+  .boor2,
+  .boor3 {
+    display: none;
   }
+}
 
-
-
-  .minfotter {
-
-    background-color: #2d2933;
-
+@media (min-width: 300px) and (max-width: 900px) {
+  .blogs .contant .btns button {
+    padding: 10px 15px;
+    margin-right: 0px !important;
+    margin-bottom: 12px;
+    font-size: 10px;
   }
+}
 
-
- .minfotter .fot {
-
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    color: $iconColor;
-    
+@media (min-width: 300px) and (max-width: 900px) {
+  .clents .smlltil {
+    padding: 0px !important;
+    font-size: 12px;
   }
-  
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .clents .clent .overlay {
+    left: 45px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .clents .clent img {
+    position: relative;
+    left: 45px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .clents .clent {
+    padding: 0px !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .bigteam .team img {
+    width: 140px;
+    text-align: center;
+    position: relative;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .teams .ourteam p {
+    padding: 0rem 1rem !important;
+    top: 17%;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .teams .modify {
+    height: 5px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .bigteam .team {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .bigteam .ourteam {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
   .minfotter .fot p {
+    font-size: 10px;
+    display: inline;
+  }
+}
 
-    font-weight: 600;
+@media (min-width: 320px) and (max-width: 500px) {
+  .fotter .head h3 {
     font-size: 14px;
-    padding: 20px;
+    letter-spacing: 2px;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 500px) {
-    .minfotter .fot p{
-       
-        font-size: 10px;
-        display: inline;
-        
-    }
+@media (min-width: 320px) and (max-width: 500px) {
+  .fotter .head p {
+    font-size: 10px;
   }
-   
-  .minfotter .fot span {
+}
 
-    color: $borderColor;
+@media (min-width: 320px) and (max-width: 500px) {
+  .support .bigicons .icon i {
+    left: 20px;
   }
+}
 
-
- .login ul {
-    list-style: none;
+@media (min-width: 320px) and (max-width: 500px) {
+  .support .puts .btn button {
+    position: relative;
+    left: 12% !important;
   }
-  
- .login li {
-   
-    display: inline-block;
-    padding: 20px;
-    font-weight: 600;
-    font-family: $fontfamily;
-    cursor: pointer;
-    transition: all .2s ease-out;
- }
+}
 
- @media (min-width: 320px) and (max-width: 500px) {
-    .login li{
-       
-       padding: 18px 0px;
-        
-    }
+@media (min-width: 320px) and (max-width: 500px) {
+  .login li {
+    padding: 18px 0px;
   }
-
- .login li:hover {
-
-    color: $borderColor;
- }
-
-
-
-
-
-
-
+}

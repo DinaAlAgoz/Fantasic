@@ -16,6 +16,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
+  max-height: 720px;
   padding-bottom: 2rem;
   position: relative;
   overflow: hidden;
@@ -43,12 +44,6 @@ body {
   left: 100px;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .navbar img {
-    left: 50px;
-  }
-}
-
 .home .nav-item .border {
   border: 1px soolid #ffffff;
   position: relative;
@@ -69,14 +64,6 @@ body {
   bottom: 1.7rem;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .mainlogo img {
-    width: 85px;
-    left: -55px;
-    position: relative;
-  }
-}
-
 .home .mainlogo {
   position: relative;
   left: 6rem;
@@ -90,24 +77,11 @@ body {
   bottom: 27.5rem;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .contain {
-    position: absolute;
-    left: 35%;
-  }
-}
-
 .home .contain h2 {
   font-size: 3rem;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .contain h2 {
-    font-size: 1rem;
-  }
 }
 
 .home .contain p {
@@ -116,22 +90,9 @@ body {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .contain p {
-    font-size: 0.5rem;
-  }
-}
-
 .home .contain .btns button {
   border: none;
   cursor: pointer;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .home .contain .btns button {
-    padding: 10px 10px;
-    font-size: 10px;
-  }
 }
 
 .home .contain .btns i {
@@ -142,7 +103,7 @@ body {
   background-color: #998675;
   color: #ffffff;
   border-radius: 3px;
-  padding: 10px 10px;
+  padding: 10px 14px;
   border: 0.5px solid #998675;
 }
 
@@ -152,7 +113,7 @@ body {
   border-radius: 3px;
   margin-right: 1rem;
   border: 0.5px solid #ffffff;
-  padding: 10px 20px;
+  padding: 10px 14px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -176,25 +137,27 @@ body {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  border: 1px solid #d9d9d9 !important;
+  border: 3px solid #999 !important;
   margin: 10px 33px;
-  padding: 1px;
+  padding: 5px;
   position: relative;
+  background: #999 !important;
+  top: 0.3px;
 }
 
 .home .owl-dot span::after {
   content: "";
-  width: 60px;
+  width: 65.5px;
   height: 1px;
   position: absolute;
   top: 3px;
-  left: 10px;
+  left: 6px;
   background-color: #d9d9d9;
 }
 
 .home .owl-dot.active {
   background: #fff !important;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
 }
 
 /* End Home Section******************************************************************/
@@ -287,15 +250,6 @@ body {
 .blogs .contant .btns button {
   border: none;
   cursor: pointer;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .blogs .contant .btns button {
-    padding: 10px 15px;
-    margin-right: 0px !important;
-    margin-bottom: 12px;
-    font-size: 10px;
-  }
 }
 
 .blogs .contant .btns i {
@@ -416,14 +370,6 @@ body {
   left: 75%;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .feature .boor1,
-  .boor2,
-  .boor3 {
-    display: none;
-  }
-}
-
 /* End Feature Section *****************************************************************/
 /* Start clents Section */
 .clents {
@@ -456,12 +402,6 @@ body {
   padding: 0rem 5rem;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .clents .clent {
-    padding: 0px !important;
-  }
-}
-
 .clents .owl-dots {
   margin: auto;
   margin-top: 40px;
@@ -481,12 +421,20 @@ body {
 
 .clents .owl-dot span::after {
   content: "";
-  width: 60px;
+  width: 63px;
   height: 1px;
   position: absolute;
   top: 3px;
   left: 10px;
   background-color: #d9d9d9;
+}
+
+.owl-dot:last-of-type span::after {
+  display: none;
+}
+
+.owl-dot:focus {
+  outline: 0 !important;
 }
 
 .clents .owl-dot.active {
@@ -531,13 +479,6 @@ body {
   height: 120px;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .clents .clent img {
-    position: relative;
-    left: 45px;
-  }
-}
-
 .clents .clent .owl-stage-outer {
   position: relative;
   left: 110px !important;
@@ -565,27 +506,14 @@ body {
   border-radius: 50%;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .clents .clent .overlay {
-    left: 45px;
-  }
-}
-
 .clents .smlltil {
   padding: 1rem 10rem;
   position: relative;
-  bottom: 15px;
+  bottom: 50px;
   color: #d9d9d9;
   font-family: "Lato", sans-serif;
   font-weight: 500;
   padding-bottom: 2rem;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .clents .smlltil {
-    padding: 0px !important;
-    font-size: 12px;
-  }
 }
 
 /* End Clents Section *******************************************/
@@ -633,14 +561,6 @@ body {
   top: 30%;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .teams .ourteam p {
-    padding: 0rem 1rem !important;
-    top: 17%;
-    font-size: 10px;
-  }
-}
-
 .bigteam {
   position: relative;
   bottom: 310px;
@@ -648,22 +568,8 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 300px) and (max-width: 900px) {
-  .bigteam .team {
-    margin-bottom: 30px !important;
-  }
-}
-
 .bigteam .team img {
   width: 320px;
-}
-
-@media (min-width: 300px) and (max-width: 900px) {
-  .bigteam .team img {
-    width: 140px;
-    text-align: center;
-    position: relative;
-  }
 }
 
 /* End Teams Section ********************************************************/
@@ -754,13 +660,6 @@ body {
   background-color: #bc6372;
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
-  .support .puts .btn button {
-    position: relative;
-    left: 12% !important;
-  }
-}
-
 .support .puts .btn button:hover {
   background-color: #d9d9d9;
   color: #373737;
@@ -779,12 +678,6 @@ body {
   position: relative;
   left: 35px;
   color: #bc6372;
-}
-
-@media (min-width: 320px) and (max-width: 500px) {
-  .support .bigicons .icon i {
-    left: 20px;
-  }
 }
 
 .support .contt {
@@ -875,19 +768,6 @@ body {
   margin-bottom: 5em;
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
-  .fotter .head h3 {
-    font-size: 14px;
-    letter-spacing: 2px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 500px) {
-  .fotter .head p {
-    font-size: 10px;
-  }
-}
-
 .minfotter {
   background-color: #2d2933;
 }
@@ -909,13 +789,6 @@ body {
   padding: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
-  .minfotter .fot p {
-    font-size: 10px;
-    display: inline;
-  }
-}
-
 .minfotter .fot span {
   color: #bc6372;
 }
@@ -930,17 +803,193 @@ body {
   font-weight: 600;
   font-family: "Lato", sans-serif;
   cursor: pointer;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.login li:hover {
+  color: #bc6372;
+}
+
+/* media **********************************************************************************************************************/
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .navbar img {
+    left: 50px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .mainlogo img {
+    width: 85px;
+    left: -55px;
+    position: relative;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain {
+    position: absolute;
+    left: 205px;
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain h2 {
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain p {
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain .btns .btn1 {
+    width: 100px;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain .btns .btn2 {
+    width: 100px;
+    margin-bottom: 9px;
+    left: 6px;
+    position: relative;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .owl-dots {
+    position: relative;
+    bottom: 25px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .home .contain .btns button {
+    font-size: 8px;
+    display: inline;
+  }
+}
+
+/* *****************************************************************/
+@media (min-width: 300px) and (max-width: 900px) {
+  .feature .boor1,
+  .boor2,
+  .boor3 {
+    display: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .blogs .contant .btns button {
+    padding: 10px 15px;
+    margin-right: 0px !important;
+    margin-bottom: 12px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .clents .smlltil {
+    padding: 0px !important;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .clents .clent .overlay {
+    left: 45px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .clents .clent img {
+    position: relative;
+    left: 45px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .clents .clent {
+    padding: 0px !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .bigteam .team img {
+    width: 140px;
+    text-align: center;
+    position: relative;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .teams .ourteam p {
+    padding: 0rem 1rem !important;
+    top: 17%;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .teams .modify {
+    height: 5px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .bigteam .team {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .bigteam .ourteam {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .minfotter .fot p {
+    font-size: 10px;
+    display: inline;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .fotter .head h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .fotter .head p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .support .bigicons .icon i {
+    left: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .support .puts .btn button {
+    position: relative;
+    left: 12% !important;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
   .login li {
     padding: 18px 0px;
   }
-}
-
-.login li:hover {
-  color: #bc6372;
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,6 +27,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
+  //height: 100vh !important;
   padding-bottom: 2rem;
   position: relative;
   overflow: hidden;
@@ -74,11 +75,11 @@ body {
 }
 
 .home .mainlogo img {
-  width: 240px;
-  margin-bottom: 2rem;
+  width: 220px;
+ // margin-bottom: 2rem;
   position: relative;
   left: 77px;
-  bottom: 1rem;
+  bottom: 1.7rem;
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
@@ -95,10 +96,11 @@ body {
 }
 
 .home .contain {
-  color: $basicColor;
-  position: relative;
-  right: 3rem;
-  bottom: 2.5rem;
+    left: 35rem;
+    color: #ffffff;
+    position: relative;
+    /* left: 80rem; */
+    bottom: 27.5rem;
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
@@ -140,9 +142,9 @@ body {
 
 @media (min-width: 300px) and (max-width: 900px) {
   .home .contain .btns button {
-    padding: 10px 15px;
-    margin-right: 0px !important;
-    margin-bottom: 12px;
+    padding: 10px 10px;
+  //  margin-right: 0px !important;
+   // margin-bottom: 25px;
     font-size: 10px;
   }
 }
@@ -155,8 +157,8 @@ body {
   background-color: $backgroundbtn;
   color: $basicColor;
   border-radius: 3px;
-  margin-right: 1rem;
-  padding: 10px 23px;
+   //margin-right: 1rem;
+  padding: 10px 10px;
   border: 0.5px solid $backgroundbtn;
 }
 
@@ -175,6 +177,46 @@ body {
   border: $backgroundbtn;
   color: $basicColor;
 }
+
+
+.home .owl-dots {
+    margin: auto;
+    text-align: center;
+    display: block !important;
+    position: relative;
+    bottom: 21rem;
+    left: 16px;
+  }
+
+  .home .owl-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid $iconColor !important;
+    margin: 10px 33px;
+    padding: 1px;
+    position: relative;
+  }
+
+  .home .owl-dot span::after{
+
+    content: "";
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    background-color: #d9d9d9;
+
+
+  }
+  .home  .owl-dot.active {
+    background: #fff !important;
+    border: 2px solid #ffffff;
+   // padding: 5px;
+   // width: 12px;
+   // height: 12px;
+  }
 
 /* End Home Section******************************************************************/
 
@@ -341,6 +383,7 @@ body {
 
 .feature .ful {
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 .feature .icons .bor {
   border-right: 1px dashed $pragrphColor;
@@ -354,6 +397,7 @@ body {
   border-radius: 50%;
   font-size: 25px;
   margin-bottom: 28px;
+  cursor: pointer;
 }
 
 .feature .con h4 {
@@ -445,12 +489,50 @@ body {
   }
 }
 
+.clents .owl-dots {
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    display: block !important;
+  }
+
+  .clents .owl-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid $iconColor !important;
+    margin: 10px 33px;
+    padding: 1px;
+    position: relative;
+  }
+
+  .clents .owl-dot span::after{
+
+    content: "";
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    background-color: #d9d9d9;
+
+
+  }
+  .clents  .owl-dot.active {
+    background: #fff !important;
+    border: 2px solid #ffffff;
+   // padding: 5px;
+   // width: 12px;
+   // height: 12px;
+  }
+
+
 .clents .head h3 {
   position: absolute;
-  top: 120px;
+  top: 140px;
   font-size: 16px;
   color: $secborder;
-  left: 0px;
+  left: -25px;
   display: inline;
   text-transform: uppercase;
 }
@@ -472,6 +554,21 @@ body {
   left: 25px;
 }
 
+.clents .owl-item.active.center img {
+
+    width: 120px;
+    height: 120px;
+}
+
+.clents .owl-item.active.center .overlay {
+
+    width: 120px;
+    height: 120px;
+}
+
+
+
+
 @media (min-width: 300px) and (max-width: 900px) {
   .clents .clent img {
     position: relative;
@@ -482,6 +579,23 @@ body {
 .clents .clent .owl-stage-outer {
   position: relative;
   left: 110px !important;
+}
+
+.clents .owl-item.active.center .overlay 
+
+{
+    display: none;
+}
+
+.clents .owl-item.active.center .head h3 {
+
+    display: block !important;
+
+
+}
+
+.owl-item .head h3 {
+    display: none;
 }
 
 .clents .clent .overlay {
